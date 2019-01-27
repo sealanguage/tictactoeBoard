@@ -81,13 +81,3 @@ for (var i in a)
 
 
 
-
-
-// for (var i in a) 
-// {
-//   console.log("row " + i);
-//   for (var i in a) 
-//      {
-//       process.stdout.write(" " + a);
-//      }
-// }

@@ -21,7 +21,11 @@ process.stdout.write(space + vbar + space + vbar + space + "\n" + "\n" + "\n");
 
 
 
-var a = [[space, vbar, space, vbar, space], [dash, plus, dash, plus, dash], [space, vbar, space, vbar, space], [dash, plus, dash, plus, dash], [space, vbar, space, vbar, space]];
+var a = [[space, vbar, space, vbar, space], 
+    [dash, plus, dash, plus, dash], 
+    [space, vbar, space, vbar, space], 
+    [dash, plus, dash, plus, dash], 
+    [space, vbar, space, vbar, space]];
 
 console.log("reading array a");
  
