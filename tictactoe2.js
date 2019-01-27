@@ -70,8 +70,11 @@ var a = [[space, vbar, space, vbar, space], [dash, plus, dash, plus, dash], [spa
 for (var i in a) 
 {
   console.log(a[i].join(""));
-}
+};
 
+a.forEach(function(item, index, array) {
+  console.log(item, index);
+});
 
 
 
