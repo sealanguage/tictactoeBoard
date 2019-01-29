@@ -27,7 +27,7 @@ var a = [["X", vbar, "X", vbar, "X"],
     [dash, plus, dash, plus, dash], 
     ["X", vbar, "X", vbar, "X"]];
     
-var gameRaw = [9];
+var gameRaw = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     
 
 console.log("reading array a \n");
