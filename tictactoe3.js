@@ -21,13 +21,16 @@ process.stdout.write(space + vbar + space + vbar + space + "\n" + "\n" + "\n");
 
 
 
-var a = [[space, vbar, space, vbar, space], 
+var a = [["X", vbar, "X", vbar, "X"], 
     [dash, plus, dash, plus, dash], 
-    [space, vbar, space, vbar, space], 
+    ["X", vbar, "X", vbar, "X"], 
     [dash, plus, dash, plus, dash], 
-    [space, vbar, space, vbar, space]];
+    ["X", vbar, "X", vbar, "X"]];
+    
+var gameRaw = [9];
+    
 
-console.log("reading array a");
+console.log("reading array a \n");
  
 for (var i in a) 
 {

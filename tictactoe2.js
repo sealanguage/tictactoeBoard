@@ -52,7 +52,7 @@ process.stdout.write(space + vbar + space + vbar + space + "\n" + "\n" + "\n");
 
    
 // var B = [" ", "|", " ", "|", " ", "\n"];
-board[1] = vbar;
+board[1] = space;
 board[3] = vbar;
 board[2] = plus;
 
@@ -66,19 +66,41 @@ var a = [[space, vbar, space, vbar, space], [dash, plus, dash, plus, dash], [spa
 
 // process.stdout.write(a);
 
- 
+// draw the board
 for (var i in a) 
 {
   console.log(a[i].join(""));
 };
 
-a.forEach(function(item, index, array) {
-  console.log(item, index);
-});
+// // reading the arrawy onto console, has comas and single quotes and bracktes 
+// a.forEach(function(item, index, array) {
+//   console.log("item, index", item, index);
+// });
 
 
+var a = [["X", vbar, "X", vbar, "X"]];
+var aline = [[dash, plus, dash, plus, dash]];
 
+for (var i in a) 
+{
+  console.log(a[i].join(""));
+  {
+      for (var j in aline; j < 2; j++)
+      {
+          console.log(aline[i].join(""));
+      }
+  }
+};
 
+// // trying to draw the board separating lines
+// for (var i in a) 
+// {
+//   console.log(a[i].join(""));
+// //   console.log(aline[i].join(""));
+// //   console.log(arow[i].join(""));
+// //   console.log(aline[i].join(""));
+// //   console.log(arow[i].join(""));
+// };
 
 
 
