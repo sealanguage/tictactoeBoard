@@ -37,27 +37,41 @@ var gameRaw = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // a[4][0] = gameRaw[6];
 // a[4][2] = gameRaw[7];
 // a[4][4] = gameRaw[8];
-// var string = [9, 8, 7, 6, 5, 4, 3, 2, 1];
+var arrBoard = [3, 6, 2, 7, 5, 1, 9, 4, 8];
+var num = 21;
 
-function importBoard(string[9]) {
-    return string;
+function boardState (arr, num) {
+    let arrBoard = [1, 2];
+    while (num >= 1) {
+        arrBoard.push([...arr]);
+        console.log("arrBoard is", arrBoard);
+    }
+    return arrBoard;
 }
+  
+console.log("2 arrBoard is", arrBoard);  
+
+
+// create function to bring in string of game play, 9 piece array
+// function importBoard(string[9]) {
+//     return string;
+// }
 
 // change gameRow to importBoard
-a[0][0] = string[0];
-a[0][2] = string[1];
-a[0][4] = string[2];
+a[0][0] = arrBoard[0];
+a[0][2] = arrBoard[1];
+a[0][4] = arrBoard[2];
 
-a[2][0] = string[3];
-a[2][2] = string[4];
-a[2][4] = string[5];
+a[2][0] = arrBoard[3];
+a[2][2] = arrBoard[4];
+a[2][4] = arrBoard[5];
 
-a[4][0] = string[6];
-a[4][2] = string[7];
-a[4][4] = string[8];
+a[4][0] = arrBoard[6];
+a[4][2] = arrBoard[7];
+a[4][4] = arrBoard[8];
 
 
-console.log("reading array a \n");
+console.log("reading the while board array a \n");
 // drawing the board 
 for (var i in a) 
 {
@@ -65,3 +79,17 @@ for (var i in a)
 }
 
 
+
+// copy an array with the spread operator
+
+// function copyMachine(arr, num) {
+//   let newArr = [];
+//   while (num >= 1) {
+//     // change code below this line
+
+//       newArr.push([...arr]);
+//     // change code above this line
+//     num--;
+//   }
+//   return newArr;
+// }
